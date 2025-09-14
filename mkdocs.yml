@@ -1,0 +1,79 @@
+site_name: Ma documentation Perso
+theme:
+  name: material
+  language: fr
+  palette:
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/brightness-auto
+        name: Switch to light mode
+
+    # Palette toggle for light mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+
+    # Palette toggle for dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      toggle:
+        icon: material/brightness-4
+        name: Switch to system preference
+  features:
+    - navigation.instant
+    - navigation.instant.progress
+    - navigation.instant.preview
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.expand
+    - toc.integrate
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - search.share
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+
+plugins:
+  - search:
+      lang: fr
+  - tags:
+      tags_file: tags.md
+  - blog
+
+nav:
+  - Home: index.md
+  - Code Docs:
+      - Python: coding/my-coding.md
+      - Configuration: coding/nfs.md
+  - About:
+      - About Me: about/about.md
+      - Enfant 1: about/enfant1.md
+      - Enfant 2: about/enfant2.md
+      - Enfant 3: about/enfant3.md
+      - Enfant 4: about/enfant4.md
+  - Tags: tags.md
+  - Blog:
+      - blog/index.md
+      # - navigation.tabs
+      # - navigation.sections
+# palette:
+#   - scheme: default
+#     primary: indigo
+#     accent: indigo
+#   - scheme: slate
+#     primary: indigo
+#     accent: indigo
