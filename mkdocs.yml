@@ -49,9 +49,9 @@ markdown_extensions:
 
 plugins:
   - search:
-      lang: fr
-  - tags:
-      tags_file: tags.md
+      ## lang: fr
+  ##- tags:
+  ##   tags_file: tags.md
   - blog
 
 nav:
